@@ -1,0 +1,47 @@
+[
+  {
+    "category": "Cakes/Slices",
+    "items": [
+      {"name": "1.Oreo Cheesecake", "price": 6.5},
+      {"name": "2.Strawberry Cheesecake", "price": 6.5},
+      {"name": "3.Plain Cheesecake", "price": 6.5},
+      {"name": "4.Carrot Cake", "price": 6.0},
+      {"name": "5.Strawberry Shortcake", "price": 6.0},
+      {"name": "6.Peach Shortcake", "price": 6.0},
+      {"name": "7.Chocolate Fudge", "price": 6.0},
+      {"name": "8.Red Velvet", "price": 6.0},
+      {"name": "9.Blue Velvet", "price": 6.0},
+      {"name": "10.Guava Shortcake", "price": 6.0},
+      {"name": "11.Flan", "price": 6.0},
+      {"name": "12.Chocolate Flan", "price": 6.0}
+    ]
+  },
+  {
+    "category": "Pastries & Breads",
+    "items": [
+      {"name": "1.Lobster Tail", "price": 5.0},
+      {"name": "2.Pound Cake", "price": 3.0},
+      {"name": "3.Elephant Ear", "price": 3.50},
+      {"name": "4.Glazed Almond Croissant", "price": 3.0},
+      {"name": "5.Glazed Almond Danish", "price": 3.0},
+      {"name": "6.Almond Guava Cheese Danish", "price": 3.0},
+      {"name": "7.Sticky Bun", "price": 3.8},
+      {"name": "8.Pound Cake", "price": 3.0},
+      {"name": "9.Chocolate Dipped Croissant", "price": 3.0},
+      {"name": "10.Apple Turnover", "price": 3.0},
+      {"name": "11.Cream Puff", "price": 2.0},
+      {"name": "12.Vanilla Cupcake", "price": 2.0},
+      {"name": "13.Chocolate Cupcake", "price": 2.0},
+      {"name": "14.M&M Cookie", "price": 3.0},
+      {"name": "14.Custard Donut w/ Chocolate Icing", "price": 1.5},
+      {"name": "15.Custard Donut w/ Vanilla Icing", "price": 1.5},
+      {"name": "16.Concha Bread", "price": 1.5}
+    ]
+  },
+  {
+    "category": "Combos",
+    "items": [
+      {"name": "1.Coffee w/ Donut", "price": 2.75}
+    ]
+  }
+]

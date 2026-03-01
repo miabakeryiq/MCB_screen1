@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Magic Cakes Menu | Screen 1</title>
+<link href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet">
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  body {
+    width: 1456px;
+    height: 816px;
+    overflow: hidden;
+    font-family: 'Nunito', sans-serif;
+    position: relative;
+    background: #3a2a1a;
+  }
+
+  /* Video background */
+  #bg-video {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 0;
+  }
+
+  /* Dark overlay to keep menu readable */
+  .bg {
+    position: absolute;
+    inset: 0;
+    background: rgba(20, 10, 0, 0.45);
+    z-index: 1;
+  }
+
+  .menu-card {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    right: 20px;
+    bottom: 20px;
+    background: rgba(255, 255, 255, 0.376);
+    border-radius: 24px;
+    padding: 20px 32px 24px;
+    display: flex;
+    flex-direction: column;
+    z-index: 2;
+  }
+
+  /* Title - Logo Image */
+  .title {
+    text-align: center;
+    margin-bottom: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .title img {
+    max-height: 60px;
+    width: auto;
+    object-fit: contain;
+  }
+
+  /* Three column layout */
+  .columns {
+    display: grid;
+    grid-template-columns: 1fr 1.6fr 1fr;
+    gap: 0;
+    flex: 1;
+    align-items: start;
+  }
+
+  .col {
+    padding: 0 16px;
+    border-right: 1px solid rgba(0,0,0,0.08);
+  }
+  .col:last-child { border-right: none; }
+
+  .col-header {
+    font-family: 'Nunito', sans-serif;
+    font-weight: 900;
+    font-size: 30px;
+    text-decoration: underline;
+    text-underline-offset: 4px;
+    color: #1a1a1a;
+    margin-bottom: 10px;
+  }
+
+  .menu-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    margin-bottom: 5px;
+    font-size: 19px;
+    font-weight: 700;
+    color: #111;
+    line-height: 1.25;
+  }
+
+  .item-name {
+    flex: 1;
+    padding-right: 8px;
+  }
+
+  .item-price {
+    font-weight: 700;
+    white-space: nowrap;
+    flex-shrink: 0;
+  }
+
+  .star {
+    color: #f4c430;
+    font-size: 18px;
+    margin-left: 4px;
+  }
+
+  /* Pastries column - two sub-columns */
+  .pastries-inner {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0 12px;
+  }
+
+  .pastries-col .col-header {
+    grid-column: 1 / -1;
+  }
+
+  .pastry-sub {
+    grid-column: span 1;
+  }
+
+  .pastries-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 16px;
+  }
+</style>
+</head>
+<body>
+  <!-- Free croissants/bakery video from Pexels -->
+  <video id="bg-video" autoplay muted loop playsinline>
+    <source src="8855047-hd_1920_1080_25fps.mp4" type="video/mp4">
+    <!-- Fallback: another bakery clip -->
+    <source src="https://videos.pexels.com/video-files/4224206/4224206-uhd_2560_1440_24fps.mp4" type="video/mp4">
+  </video>
+  <div class="bg"></div>
+  <div class="menu-card">
+    <!-- Title -->
+    <div class="title">
+      <img src="logo/MagicCakeslogo_nobg.png" alt="Magic Cakes">
+    </div>
+
+    <div class="columns">
+      <!-- CAKES/SLICES -->
+      <div class="col">
+        <div class="col-header">Cakes/Slices</div>
+
+        <div class="menu-item">
+          <span class="item-name">1.Oreo Cheesecake</span>
+          <span class="item-price">$6.50 <span class="star">★</span></span>
+        </div>
+        <div class="menu-item">
+          <span class="item-name">2.Strawberry Cheesecake</span>
+          <span class="item-price">$6.50 <span class="star">★</span></span>
+        </div>
+        <div class="menu-item">
+          <span class="item-name">3.Plain Cheesecake</span>
+          <span class="item-price">$6.50</span>
+        </div>
+        <div class="menu-item">
+          <span class="item-name">4.Carrot Cake</span>
+          <span class="item-price">$6.00</span>
+        </div>
+        <div class="menu-item">
+          <span class="item-name">5.Strawberry Shortcake</span>
+          <span class="item-price">$6.00</span>
+        </div>
+        <div class="menu-item">
+          <span class="item-name">6.Peach Shortcake</span>
+          <span class="item-price">$6.00 <span class="star">★</span></span>
+        </div>
+        <div class="menu-item">
+          <span class="item-name">7.Chocolate Fudge</span>
+          <span class="item-price">$6.00</span>
+        </div>
+        <div class="menu-item">
+          <span class="item-name">8.Red Velvet</span>
+          <span class="item-price">$6.00 <span class="star">★</span></span>
+        </div>
+        <div class="menu-item">
+          <span class="item-name">9.Blue Velvet</span>
+          <span class="item-price">$6.00</span>
+        </div>
+        <div class="menu-item">
+          <span class="item-name">10.Guava Shortcake</span>
+          <span class="item-price">$6.00</span>
+        </div>
+        <div class="menu-item">
+          <span class="item-name">11.Flan</span>
+          <span class="item-price">$6.00</span>
+        </div>
+        <div class="menu-item">
+          <span class="item-name">12.Chocolate Flan</span>
+          <span class="item-price">$6.00</span>
+        </div>
+      </div>
+
+      <!-- PASTRIES & BREADS (two sub-columns) -->
+      <div class="col">
+        <div class="col-header" style="text-align:center;">Pastries &amp; Breads</div>
+        <div class="pastries-grid">
+          <div>
+            <div class="menu-item">
+              <span class="item-name">1.Lobster Tail</span>
+              <span class="item-price">$4.00</span>
+            </div>
+            <div class="menu-item">
+              <span class="item-name">2.Pound Cake</span>
+              <span class="item-price">$3.00</span>
+            </div>
+            <div class="menu-item">
+              <span class="item-name">3.Elephant Ear</span>
+              <span class="item-price">$3.00</span>
+            </div>
+            <div class="menu-item">
+              <span class="item-name">4.Glazed Almond Croissant</span>
+              <span class="item-price">$3.00</span>
+            </div>
+            <div class="menu-item">
+              <span class="item-name">5.Glazed Almond Danish</span>
+              <span class="item-price">$3.00</span>
+            </div>
+            <div class="menu-item">
+              <span class="item-name">6.Almond Guava Cheese Danish</span>
+              <span class="item-price">$3.00</span>
+            </div>
+            <div class="menu-item">
+              <span class="item-name">7.Sticky Bun</span>
+              <span class="item-price">$3.80</span>
+            </div>
+            <div class="menu-item">
+              <span class="item-name">8.Pound Cake</span>
+              <span class="item-price">$3.00</span>
+            </div>
+            <div class="menu-item">
+              <span class="item-name">9.Chocolate Dipped Croissant</span>
+              <span class="item-price">$3.00</span>
+            </div>
+            <div class="menu-item">
+              <span class="item-name">10.Apple Turnover</span>
+              <span class="item-price">$3.00 <span class="star">★</span></span>
+            </div>
+            <div class="menu-item">
+              <span class="item-name">11.Cream Puff</span>
+              <span class="item-price">$2.00</span>
+            </div>
+            <div class="menu-item">
+              <span class="item-name">12.Vanilla Cupcake</span>
+              <span class="item-price">$2.00</span>
+            </div>
+            <div class="menu-item">
+              <span class="item-name">13.Chocolate Cupcake</span>
+              <span class="item-price">$2.00</span>
+            </div>
+          </div>
+          <div>
+            <div class="menu-item">
+              <span class="item-name">14.M&amp;M Cookie</span>
+              <span class="item-price">$3.00</span>
+            </div>
+            <div class="menu-item">
+              <span class="item-name">14.Custard Donut w/ Chocolate Icing</span>
+              <span class="item-price">$1.50</span>
+            </div>
+            <div class="menu-item">
+              <span class="item-name">15.Custard Donut w/ Vanilla Icing</span>
+              <span class="item-price">$1.50</span>
+            </div>
+            <div class="menu-item">
+              <span class="item-name">16.Concha Bread</span>
+              <span class="item-price">$1.50</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- COMBOS -->
+      <div class="col">
+        <div class="col-header">Combos</div>
+        <div class="menu-item">
+          <span class="item-name">1.Coffee w/ Donut</span>
+          <span class="item-price">$2.75</span>
+        </div>
+      </div>
+    </div>
+  </div>
+    <!-- price update form container -->
+    <!-- toggleable price update panel (hidden by default) -->
+    <div id="price-form-container" style="position:absolute; bottom:20px; right:20px; z-index:3; background:rgba(255,255,255,0.9); padding:16px; border-radius:8px; max-width:300px; display:none;">
+      <button id="toggle-form-button" style="position:absolute; top:4px; right:4px; background:none;border:none;font-size:16px;cursor:pointer;">✖</button>
+      <h3 style="margin-bottom:8px; font-size:18px;">Update Prices</h3>
+      <form id="price-update-form">
+        <!-- form fields will be generated from JSON -->
+      </form>
+    </div>
+    <!-- control to show the hidden form -->
+    <!-- <button id="show-form-trigger" style="position:absolute; bottom:20px; right:20px; z-index:4;">Edit Prices</button> -->
+
+    <script>
+      // menuJson will be loaded from external file
+      let menuJson = [];
+
+      function buildPriceForm() {
+        const form = document.getElementById('price-update-form');
+        form.innerHTML = '';
+        menuJson.forEach((section, sectionIndex) => {
+          const fieldset = document.createElement('fieldset');
+          const legend = document.createElement('legend');
+          legend.textContent = section.category;
+          fieldset.appendChild(legend);
+
+          section.items.forEach((item, itemIndex) => {
+            const wrapper = document.createElement('div');
+            wrapper.style.marginBottom = '6px';
+
+            const label = document.createElement('label');
+            label.textContent = item.name + ': ';
+            label.style.fontSize = '14px';
+            label.htmlFor = `price-${sectionIndex}-${itemIndex}`;
+
+            const input = document.createElement('input');
+            input.type = 'number';
+            input.min = '0';
+            input.step = '0.01';
+            input.value = item.price.toFixed(2);
+            input.id = `price-${sectionIndex}-${itemIndex}`;
+            input.dataset.section = sectionIndex;
+            input.dataset.index = itemIndex;
+
+            wrapper.appendChild(label);
+            wrapper.appendChild(input);
+            fieldset.appendChild(wrapper);
+          });
+
+          form.appendChild(fieldset);
+        });
+
+        const submit = document.createElement('button');
+        submit.type = 'submit';
+        submit.textContent = 'Apply Changes';
+        submit.style.marginTop = '8px';
+        form.appendChild(submit);
+      }
+
+      // update the visible menu prices based on the current JSON data
+      function syncMenuFromJson() {
+        const priceSpans = document.querySelectorAll('.menu-item');
+        priceSpans.forEach(span => {
+          const nameElement = span.querySelector('.item-name');
+          const priceElement = span.querySelector('.item-price');
+          if (!nameElement || !priceElement) return;
+          const nameText = nameElement.textContent;
+          // find matching item in JSON
+          for (const section of menuJson) {
+            const match = section.items.find(i => i.name === nameText);
+            if (match) {
+              // set the text node to formatted price (preserve stars)
+              priceElement.childNodes[0].nodeValue = '$' + match.price.toFixed(2) + ' ';
+              break;
+            }
+          }
+        });
+      }
+
+      document.getElementById('price-update-form').addEventListener('submit', function(e) {
+        e.preventDefault();
+        const inputs = this.querySelectorAll('input[type=number]');
+        inputs.forEach(input => {
+          const sec = parseInt(input.dataset.section, 10);
+          const idx = parseInt(input.dataset.index, 10);
+          const newPrice = parseFloat(input.value);
+          if (!isNaN(newPrice)) {
+            menuJson[sec].items[idx].price = newPrice;
+            // update the HTML display as well
+            syncMenuFromJson();
+          }
+        });
+        alert('Prices updated!');
+      });
+
+      // load JSON data from external file, then initialize
+      fetch('menu-data.json')
+        .then(resp => resp.json())
+        .then(data => {
+          menuJson = data;
+          buildPriceForm();
+          syncMenuFromJson();
+        });
+
+      // toggle logic
+      const container = document.getElementById('price-form-container');
+      const trigger = document.getElementById('show-form-trigger');
+      const closeBtn = document.getElementById('toggle-form-button');
+      trigger.addEventListener('click', () => {
+        container.style.display = 'block';
+        trigger.style.display = 'none';
+      });
+      closeBtn.addEventListener('click', () => {
+        container.style.display = 'none';
+        trigger.style.display = 'block';
+      });
+    </script>
+</body>
+</html>
