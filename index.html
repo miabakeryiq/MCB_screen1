@@ -50,12 +50,12 @@
     bottom: 0;
     background: rgba(255, 255, 255, 0.376);
     border-radius: 0; /* remove rounded corners for full screen */
-    padding: 2vh 3vw; /* responsive padding based on viewport */
+    padding: 1vh 2vw; /* tighter padding for large screens */
     display: flex;
     flex-direction: column;
     z-index: 2;
     max-height: 100vh;
-    overflow: auto; /* allow scrolling if content is taller than screen */
+    overflow: hidden; /* prevent scrolling, scale content to fit */
   }
 
   /* Title - Logo Image */
@@ -113,16 +113,24 @@
   /* large-screen adjustments (TVs, monitors like 42" at 1080p ~1920px) */
   @media (min-width: 1920px) {
     .menu-card {
-      padding: 3vh 4vw;
+      padding: 0.5vh 1vw;
     }
     .title img {
-      max-height: 10vh;
+      max-height: 3vh;
     }
     .col-header {
-      font-size: 2vw;
+      font-size: 1vw;
+      margin-bottom: 0.3vh;
     }
     .menu-item {
-      font-size: 1.2vw;
+      font-size: 0.5vw;
+      margin-bottom: 0.1vh;
+    }
+    .columns {
+      gap: 0.3vw;
+    }
+    .col {
+      padding: 0 0.3vw;
     }
   }
 
