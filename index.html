@@ -110,8 +110,8 @@
     }
   }
 
-  /* large-screen adjustments (TVs, monitors like 42" at 1080p ~1920px) */
-  @media (min-width: 1920px) {
+  /* large-screen adjustments (TVs, monitors like 42" at 1080p ~1920px, or any wide screen) */
+  @media (min-width: 1000px) {
     .menu-card {
       padding: 0.5vh 1vw;
     }
@@ -128,9 +128,11 @@
     }
     .columns {
       gap: 0.3vw;
+      flex-direction: row;
     }
     .col {
       padding: 0 0.3vw;
+      margin-bottom: 0;
     }
   }
 
