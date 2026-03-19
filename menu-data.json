@@ -28,14 +28,14 @@
       {"name": "7.Sticky Bun", "price": 3.8},
       {"name": "8.Pound Cake", "price": 3.0},
       {"name": "9.Chocolate Dipped Croissant", "price": 3.0},
-      {"name": "10.Apple Turnover", "price": 3.0},
+      {"name": "10.Apple Turnover", "price": 2.0},
       {"name": "11.Cream Puff", "price": 2.0},
       {"name": "12.Vanilla Cupcake", "price": 2.0},
       {"name": "13.Chocolate Cupcake", "price": 2.0},
       {"name": "14.M&M Cookie", "price": 3.0},
-      {"name": "14.Custard Donut w/ Chocolate Icing", "price": 1.5},
-      {"name": "15.Custard Donut w/ Vanilla Icing", "price": 1.5},
-      {"name": "16.Concha Bread", "price": 1.5}
+      {"name": "14.Custard Donut w/ Chocolate Icing", "price": 2.0},
+      {"name": "15.Custard Donut w/ Vanilla Icing", "price": 2.0},
+      {"name": "16.Concha Bread", "price": 2.0}
     ]
   },
   {
